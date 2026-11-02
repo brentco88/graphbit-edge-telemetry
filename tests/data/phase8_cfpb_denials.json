@@ -1,0 +1,57 @@
+[
+  {
+    "complaint_id": "CFPB-01",
+    "friction_pattern": "Unbilled Insurance & Premature Collections Assignment",
+    "narrative": "Medical provider failed to file claim with active health insurance, ignored coding error within timely filing window, and transferred unbilled sticker-price balance directly to collections.",
+    "statutory_rule": "Sec. 4(a), 4(e) Financial Assistance Screening",
+    "violation_trigger": "Seeking payment or initiating collection actions prior to required screening.",
+    "consumer_remedy": "Mandatory reversal of collection actions and full refund of excess amounts paid.",
+    "denial_category": "Administrative and Technical Errors",
+    "root_cause_prevalence": 0.77,
+    "target_frustration_index": 0.82
+  },
+  {
+    "complaint_id": "CFPB-02",
+    "friction_pattern": "Identity Misattribution & Family Debt Coercion",
+    "narrative": "Debt collector pursued spouse for adult medical debt after explicit notice of non-liability and refusal to correct mismatched identifiers.",
+    "statutory_rule": "Sec. 9(a)-(c) Family and Third-Party Liability Protections",
+    "violation_trigger": "Attempting to collect an adult medical debt from a spouse or family member.",
+    "consumer_remedy": "Complete exemption from personal liability and dismissal of collection lawsuits.",
+    "denial_category": "Administrative and Technical Errors",
+    "root_cause_prevalence": 0.77,
+    "target_frustration_index": 0.88
+  },
+  {
+    "complaint_id": "CFPB-03",
+    "friction_pattern": "Validation Rights Ignorance & Truncated Dispute Windows",
+    "narrative": "Debt collector failed to send 30-day written validation notice, demanded response within 10 days, and refused to substantiate debt upon certified dispute.",
+    "statutory_rule": "12 CFR 1006.34 Debt Collection Validation Notice Rule",
+    "violation_trigger": "Unlawfully shortening dispute window and continuing active reporting without debt substantiation.",
+    "consumer_remedy": "Mandatory pause on collections and removal of unsubstantiated trade lines.",
+    "denial_category": "Administrative and Technical Errors",
+    "root_cause_prevalence": 0.77,
+    "target_frustration_index": 0.79
+  },
+  {
+    "complaint_id": "CFPB-04",
+    "friction_pattern": "Unlawful Balance Billing & Collection of Charity Care Write-Offs",
+    "narrative": "Collector pursued balance designated as 100 percent Provider Responsibility under managed care contract and approved for hospital charity care.",
+    "statutory_rule": "Sec. 4(f), 4(g) Interest Rate and Fee Caps",
+    "violation_trigger": "Assessing fees or pursuing collection on accounts approved for financial assistance.",
+    "consumer_remedy": "Reversal of collection, zero interest cap enforcement, and refund of seized funds.",
+    "denial_category": "Non-Covered Services and Benefit Limits",
+    "root_cause_prevalence": 0.11,
+    "target_frustration_index": 0.85
+  },
+  {
+    "complaint_id": "CFPB-05",
+    "friction_pattern": "Coercive Tactics, Deceptive Threats, & Harassment",
+    "narrative": "Collection agency conducted rapid call barrages, ignored written cease-and-desist notice, and threatened illegal credit reporting on debt under 500 dollars.",
+    "statutory_rule": "Sec. 7(b), 7(c), 7(f)(1) Credit Reporting Ban and ECA Timelines",
+    "violation_trigger": "Threatening credit reporting within protected moratorium or below statutory reporting thresholds.",
+    "consumer_remedy": "Mandatory deletion of negative reporting and cessation of collection activities.",
+    "denial_category": "Administrative and Technical Errors",
+    "root_cause_prevalence": 0.77,
+    "target_frustration_index": 0.91
+  }
+]

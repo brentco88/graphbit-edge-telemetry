@@ -1,0 +1,37 @@
+{
+  "claim_id": "CLM-44910283-B7X1",
+  "patient_context": {
+    "anonymous_token": "anon_sha256_3f11c7e99a02d44",
+    "dialectal_input": "Clinic told me the pre-auth was submitted by the nurse last month before the procedure. Carrier says they got zero records and slapped me with full billing.",
+    "patient_stated_timeline": [
+      {
+        "approximate_date": "2026-07-15",
+        "event_description": "Primary care provider submitted initial prior-authorization fax."
+      },
+      {
+        "approximate_date": "2026-08-10",
+        "event_description": "Outpatient diagnostic imaging executed."
+      }
+    ]
+  },
+  "denial_metadata": {
+    "payer_name": "Apex Mutual Care",
+    "denial_reason_category": "PRIOR_AUTH_MISSING",
+    "denial_clause_text": "Denial Code PA-09: Mandatory prior-authorization token omitted from billing submission.",
+    "filing_deadline": "2026-09-12",
+    "dispute_level": "INTERNAL_LEVEL_1"
+  },
+  "clinical_codes": {
+    "icd10_codes": ["M54.50"],
+    "cpt_codes": ["72148"]
+  },
+  "telemetry_state": {
+    "frustration_index": 0.62,
+    "interaction_velocity_delta": 0.65,
+    "negative_vector_antigens": [
+      "ANTIGEN_SCHEMA_MISSING_PA_TOKEN",
+      "ANTIGEN_PRUNE_EXPLORATORY_DAG"
+    ],
+    "execution_status": "ELEVATED_HEURISTIC"
+  }
+}

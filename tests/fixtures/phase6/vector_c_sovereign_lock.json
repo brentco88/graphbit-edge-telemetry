@@ -1,0 +1,43 @@
+{
+  "claim_id": "CLM-88231049-C3K9",
+  "patient_context": {
+    "anonymous_token": "anon_sha256_7a00d41e2b55f89",
+    "dialectal_input": "Look this is the third time your system bounced my paperwork back. The deadline is tomorrow and my specialist says if I miss this biologic dose my joints lock completely up. Stop giving me computer responses. I need a person right now.",
+    "patient_stated_timeline": [
+      {
+        "approximate_date": "2026-08-01",
+        "event_description": "First appeal rejected for improper formatting."
+      },
+      {
+        "approximate_date": "2026-08-20",
+        "event_description": "Secondary appeal letter submitted via portal."
+      },
+      {
+        "approximate_date": "2026-09-02",
+        "event_description": "Portal error flags conflicting dates of diagnosis."
+      }
+    ]
+  },
+  "denial_metadata": {
+    "payer_name": "Horizon Health Shield",
+    "denial_reason_category": "TIMELY_FILING_LIMIT",
+    "denial_clause_text": "Section 12.A: Final grievance window expires 30 days post-denial. Hard stop.",
+    "filing_deadline": "2026-09-04",
+    "dispute_level": "INTERNAL_LEVEL_2"
+  },
+  "clinical_codes": {
+    "icd10_codes": ["M05.79", "M06.09"],
+    "cpt_codes": ["96413", "J0129"]
+  },
+  "telemetry_state": {
+    "frustration_index": 0.88,
+    "interaction_velocity_delta": 0.82,
+    "negative_vector_antigens": [
+      "ANTIGEN_DEADLINE_CRITICAL",
+      "ANTIGEN_REPETITIVE_PORTAL_FAILURE",
+      "ANTIGEN_TIMELY_FILING_BREACH",
+      "ANTIGEN_DYNAMIC_AUTHORITY_REVERSAL"
+    ],
+    "execution_status": "SOVEREIGN_HUMAN_LOCK"
+  }
+}

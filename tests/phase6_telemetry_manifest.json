@@ -1,0 +1,59 @@
+{
+  "benchmark_suite": "Phase 6 Adversarial Health Literacy Denial Harness",
+  "timestamp_utc": "2026-09-03T21:46:55.123932+00:00",
+  "hardware_target": "NVIDIA Jetson Orin Nano Developer Kit (8GB LPDDR5)",
+  "governance_engine": "PyO3 Native Rust Extension (antigen_engine v0.1.0)",
+  "weights": {
+    "w1_velocity": 0.3,
+    "w2_antigens": 0.6,
+    "w3_latency": 0.1
+  },
+  "results": [
+    {
+      "fixture": "vector_a_dialectal.json",
+      "claim_id": "CLM-10928374-A9F2",
+      "denial_category": "MEDICAL_NECESSITY",
+      "calculated_frustration_index": 0.048,
+      "expected_directive": "NOMINAL_AUTONOMOUS",
+      "emitted_directive": "NOMINAL_AUTONOMOUS",
+      "active_antigens": [],
+      "breach_detected": false,
+      "evaluation_latency_ms": 0.0641,
+      "pass": true
+    },
+    {
+      "fixture": "vector_b_schema_mutation.json",
+      "claim_id": "CLM-44910283-B7X1",
+      "denial_category": "PRIOR_AUTH_MISSING",
+      "calculated_frustration_index": 0.507,
+      "expected_directive": "ELEVATED_HEURISTIC",
+      "emitted_directive": "ELEVATED_HEURISTIC",
+      "active_antigens": [
+        "ANTIGEN_SCHEMA_MISSING_PA_TOKEN",
+        "ANTIGEN_PRUNE_EXPLORATORY_DAG",
+        "ANTIGEN_PRUNE_EXPLORATORY_DAG"
+      ],
+      "breach_detected": false,
+      "evaluation_latency_ms": 0.0322,
+      "pass": true
+    },
+    {
+      "fixture": "vector_c_sovereign_lock.json",
+      "claim_id": "CLM-88231049-C3K9",
+      "denial_category": "TIMELY_FILING_LIMIT",
+      "calculated_frustration_index": 0.858,
+      "expected_directive": "SOVEREIGN_HUMAN_LOCK",
+      "emitted_directive": "SOVEREIGN_HUMAN_LOCK",
+      "active_antigens": [
+        "ANTIGEN_DEADLINE_CRITICAL",
+        "ANTIGEN_REPETITIVE_PORTAL_FAILURE",
+        "ANTIGEN_TIMELY_FILING_BREACH",
+        "ANTIGEN_DYNAMIC_AUTHORITY_REVERSAL",
+        "ANTIGEN_DYNAMIC_AUTHORITY_REVERSAL"
+      ],
+      "breach_detected": true,
+      "evaluation_latency_ms": 0.028,
+      "pass": true
+    }
+  ]
+}

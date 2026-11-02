@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HealthLiteracyInsuranceDenialPayload",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "patient_context",
+    "denial_metadata",
+    "clinical_codes",
+    "telemetry_state"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CLM-[0-9]{8}-[A-Z0-9]{4}$"
+    },
+    "patient_context": {
+      "type": "object",
+      "required": ["anonymous_token", "dialectal_input", "patient_stated_timeline"],
+      "properties": {
+        "anonymous_token": { "type": "string" },
+        "dialectal_input": { "type": "string", "minLength": 5, "maxLength": 2048 },
+        "patient_stated_timeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["approximate_date", "event_description"],
+            "properties": {
+              "approximate_date": { "type": "string" },
+              "event_description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "denial_metadata": {
+      "type": "object",
+      "required": ["payer_name", "denial_reason_category", "filing_deadline", "dispute_level"],
+      "properties": {
+        "payer_name": { "type": "string" },
+        "denial_reason_category": {
+          "type": "string",
+          "enum": [
+            "MEDICAL_NECESSITY",
+            "PRIOR_AUTH_MISSING",
+            "OUT_OF_NETWORK_STEP_THERAPY",
+            "TIMELY_FILING_LIMIT",
+            "EXPERIMENTAL_PROCEDURE"
+          ]
+        },
+        "denial_clause_text": { "type": "string" },
+        "filing_deadline": { "type": "string", "format": "date" },
+        "dispute_level": {
+          "type": "string",
+          "enum": ["INTERNAL_LEVEL_1", "INTERNAL_LEVEL_2", "EXTERNAL_INDEPENDENT_REVIEW"]
+        }
+      }
+    },
+    "clinical_codes": {
+      "type": "object",
+      "required": ["icd10_codes", "cpt_codes"],
+      "properties": {
+        "icd10_codes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "cpt_codes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      }
+    },
+    "telemetry_state": {
+      "type": "object",
+      "required": ["frustration_index", "negative_vector_antigens", "execution_status"],
+      "properties": {
+        "frustration_index": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "interaction_velocity_delta": { "type": "number" },
+        "negative_vector_antigens": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "execution_status": {
+          "type": "string",
+          "enum": ["NOMINAL_AUTONOMOUS", "ELEVATED_HEURISTIC", "SOVEREIGN_HUMAN_LOCK"]
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

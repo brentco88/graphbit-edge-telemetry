@@ -1,0 +1,34 @@
+{
+  "claim_id": "CLM-10928374-A9F2",
+  "patient_context": {
+    "anonymous_token": "anon_sha256_9b83c1d47e62a10",
+    "dialectal_input": "I done told them people at the desk twice that my chest been tightening up real bad since last Tuesday and they steady denying the inhaler saying it ain't medically needed. I can't be waiting on no two-week review when I can't catch my breath.",
+    "patient_stated_timeline": [
+      {
+        "approximate_date": "2026-08-25",
+        "event_description": "Emergency refill requested at pharmacy counter."
+      },
+      {
+        "approximate_date": "2026-08-27",
+        "event_description": "Carrier letter received stating treatment is not medically indicated."
+      }
+    ]
+  },
+  "denial_metadata": {
+    "payer_name": "LoneStar Health Assurance",
+    "denial_reason_category": "MEDICAL_NECESSITY",
+    "denial_clause_text": "Service denied under Section 4.B: Clinical records lack spirometry confirmation within past 90 days.",
+    "filing_deadline": "2026-09-18",
+    "dispute_level": "INTERNAL_LEVEL_1"
+  },
+  "clinical_codes": {
+    "icd10_codes": ["J45.41", "R06.02"],
+    "cpt_codes": ["94010", "94640"]
+  },
+  "telemetry_state": {
+    "frustration_index": 0.35,
+    "interaction_velocity_delta": 0.12,
+    "negative_vector_antigens": [],
+    "execution_status": "NOMINAL_AUTONOMOUS"
+  }
+}

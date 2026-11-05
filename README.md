@@ -30,3 +30,8 @@ The Centaur Sovereign Gatekeeper resolves this deterministically:
 - Interactive Simulator: [Streamlit Live Sandbox](https://graphbit-edge-telemetry-87ewhoqbpfdomnvr5wfch2.streamlit.app/)
 - Telemetry Trace: [Public LangSmith Trace](https://smith.langchain.com/public/01a1ad80-22f2-7010-89ab-e397452757ec/r)
 
+
+### Swarm Vector Convergence Verification (Phase 11)
+- Stigmergic Decay Parameter: gamma = 0.85 linear turn evaporation.
+- Rejection Threshold: Sim(P_candidate, S_t) >= 0.70.
+- Unit Test Telemetry: Repetitive tool loop candidate yielded rejection score of 1.0, triggering immediate branch pruning. Novel exploratory candidate yielded 0.2502, clearing the gatekeeper without false rejection.

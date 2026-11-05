@@ -11,7 +11,7 @@ col_a, col_b = st.columns(2)
 with col_a:
     st.link_button("View GitHub Repository", "https://github.com/brentco88/graphbit-edge-telemetry")
 with col_b:
-    st.link_button("Inspect Live LangSmith Trace", "https://smith.langchain.com/public/134c715b-c844-494c-9468-0f67cda4510a/r")
+    st.link_button("Inspect Live LangSmith Trace", "https://smith.langchain.com/public/01a1ad80-22f2-7010-89ab-e397452757ec/r")
 
 query = st.text_area("Dispute Intake Payload", "Claim denied: CARC 16 lack of info. Prior authorization submitted.")
 velocity_deg = st.slider("Interaction Velocity Degradation", 0.0, 1.0, 0.45, 0.05)

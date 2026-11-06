@@ -1,7 +1,7 @@
 # Centaur Sovereign Gatekeeper: Edge Multi-Agent Telemetry Core
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://graphbit-edge-telemetry-87ewhoqbpfdomnvr5wfch2.streamlit.app/)
-[![LangSmith Trace](https://img.shields.io/badge/LangSmith-Public_Trace-orange)](https://smith.langchain.com/public/01a1ad80-22f2-7010-89ab-e397452757ec/r)
+[![LangSmith Trace](https://img.shields.io/badge/LangSmith-Public_Trace-orange)](https://smith.langchain.com/public/4dab8da7-4818-467e-b3ed-581a4db3bd56/r)
 [![Hardware](https://img.shields.io/badge/Target-NVIDIA_Jetson_8GB-green)](https://developer.nvidia.com/)
 
 Deterministic human-in-the-loop (HITL) runtime designed for enterprise edge orchestration. Mitigates multi-turn agentic amnesia, halts autonomous tool drift, and defends enterprise Net Retention Revenue (NRR).
@@ -28,7 +28,7 @@ The Centaur Sovereign Gatekeeper resolves this deterministically:
 
 ### Live Verification Assets
 - Interactive Simulator: [Streamlit Live Sandbox](https://graphbit-edge-telemetry-87ewhoqbpfdomnvr5wfch2.streamlit.app/)
-- Telemetry Trace: [Public LangSmith Trace](https://smith.langchain.com/public/01a1ad80-22f2-7010-89ab-e397452757ec/r)
+- Telemetry Trace: [Public LangSmith Trace](https://smith.langchain.com/public/4dab8da7-4818-467e-b3ed-581a4db3bd56/r)
 
 
 ### Swarm Vector Convergence Verification (Phase 11)

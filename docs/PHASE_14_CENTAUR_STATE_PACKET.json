@@ -1,0 +1,25 @@
+{
+  "event_type": "DYNAMIC_AUTHORITY_REVERSAL",
+  "timestamp": "2026-11-09 17:28:49 UTC",
+  "operator_id": "BRENTON_SAMBAY_CENTAUR_LEAD",
+  "source_system": "GraphBit_Edge_Gateway_Jetson_8GB",
+  "governance_status": "LOCKED_PREVENT_STATE_DRIFT",
+  "telemetry_metrics": {
+    "frustration_index": 0.88,
+    "threshold_limit": 0.75,
+    "escalation_reason": "Cyclic CARC 16 re-submission detected",
+    "pqa_score": 0.97
+  },
+  "serialized_context": {
+    "claim_id": "CLM-2026-CFPB-8891",
+    "denial_code": "CARC 16",
+    "raw_user_intake": "Dispute intake: Claim denied under CARC 16 lack of info. Prior authorization submitted.",
+    "prior_attempts": 1,
+    "triggers_logged": [
+      "carc 16",
+      "claim denied"
+    ],
+    "recommended_socratic_probe": "What specific diagnostic delta was introduced between this filing and the prior rejected claim?"
+  },
+  "centaur_action_required": "Review diagnostic delta between initial filing and resubmission. Validate clinical notes before releasing claim back to carrier gateway."
+}
